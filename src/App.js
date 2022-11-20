@@ -11,7 +11,7 @@ export default function App() {
 <Weather />
 <Forecast />
 <p>
-  This project was coded by {" "}<a href="#" target="_blank" > Viktoriia Suvorov </a>{" "} and is {" "} <a href="https://github.com/Viki333221/weather-react" target="_blank">{" "} open-souced on Github </a>
+  This project was coded by {" "}<a href="foo" target="_blank" rel="noreferrer" > Viktoriia Suvorov </a>{" "} and is {" "} <a href="https://github.com/Viki333221/weather-react" target="_blank" rel="noreferrer" >{" "} open-souced on Github </a>
 </p>
       </div>
     </div>

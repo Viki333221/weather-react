@@ -1,33 +1,24 @@
-import "./Weather.css"
 import React from "react";
 
 export default function Weather() {
     return (
-    <div className="container">
-            <div className="weather-app-wrap">
-                <div className="weather-app" id="weatherApp">
-                    <div className="row">
+    <div className="Weather">
+    <div className="row">
                         <div className="col-9">
-                            <form id="search-form">
-                                <div className="row">
-                                    <div className="col-7">
-                                        <input type="search" placeholder="Search a city 🔍" className="form-control" id="city-input" autocomplete="off" />
-                                    </div>
-                                    <div className="col-5">
+                            <form>
+                                        <input type="search" placeholder="Search a city 🔍"  />
                                         <input type="submit" value="Search" className="btn btn-primary" />
-                                    </div>
-                                </div>
                             </form>
                         </div>
                         <div className="col-3">
                             <ul>
-                                <li id="date">
+                                <li>
                                     <strong> Oct 1 </strong>
                                 </li>
-                                <li id="day">
+                                <li>
                                     Saturday
                                 </li>
-                                <li id="time">
+                                <li>
                                     15:31
                                 </li>
                             </ul>
@@ -39,35 +30,31 @@ export default function Weather() {
                         </h1>
                         <div className="col-6">
                             <ul>
-                                <li id="weatherCondition">
+                                <li>
                                     <em>cloudy</em>
                                 </li>
                                 <li>
-                                    <strong id="temperature">81</strong><span id="units"><a href="#" id="fahrenheit" className="active">°F</a>/<a href="#" id="celsius">°C</a></span>
+                                    <strong>81</strong>°F/°C
                                 </li>
                                 <li>
-                                    feels like <span id="temperatureFeels">87</span><span id="unitsSmall"><span id="fahreneitFeels">°F</span>/<span id="celsiusFeels">°C</span></span>
+                                    feels like: 87°F/°C
                                 </li>
                                 <li>
-                                    <em>min </em><span id="temperatureMin"> 78</span><span id="unitsSmall"><span id="fahreneitMin">°F</span>/<span id="celsiusMin">°C</span></span><em>Max </em><span id="temperatureMax"> 88</span><span id="unitsSmall"><span id="fahreneitMax">°F</span>/<span id="celsiusMax">°C</span></span>
+                                    min: 78°F/°C, max: 88°F/°C
                                 </li>
                             </ul>
                         </div>
                         <div className="col-6">
-                            <div className="icon"> <img src="src/cloudy.jpg" width="100" id="icon" /></div>
+                            <div className="icon"> <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width="100" alt="sunny" /></div>
                             <ul>
                                 <li>
-                                    Humidity: <span id="humidity">78</span>%
+                                    Humidity: 78%
                                 </li>
                                 <li>
-                                    Wind: <span id="wind">7</span>mph
+                                    Wind: 7mph
                                 </li>
                             </ul>
                             </div>
                         </div>
-                    <div className="forecast" id="forecast">
-                    </div>
-                </div>
-            </div>
-    </div>);
+                        </div>);
 }

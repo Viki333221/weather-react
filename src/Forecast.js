@@ -10,7 +10,7 @@ export default function Forecast(){
                             Monday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
@@ -21,7 +21,7 @@ export default function Forecast(){
                             Tuesday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
@@ -32,7 +32,7 @@ export default function Forecast(){
                             Wednesday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
@@ -43,7 +43,7 @@ export default function Forecast(){
                             Thursday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
@@ -54,7 +54,7 @@ export default function Forecast(){
                             Friday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
@@ -65,7 +65,7 @@ export default function Forecast(){
                             Saturday
                         </div>    
                             <div className="icon">
-                                  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" />
+                                  <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width={50} alt="sunny" />
                             </div>
                             <div className="forecast-temperature">
                                 10 °C/°F
