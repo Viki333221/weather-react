@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css"
 
 export default function Weather() {
     return (
@@ -6,20 +7,26 @@ export default function Weather() {
     <div className="row">
                         <div className="col-9">
                             <form>
-                                        <input type="search" placeholder="Search a city 🔍"  />
-                                        <input type="submit" value="Search" className="btn btn-primary" />
+                                <div className="row">
+                                    <div className="col-9">
+                                        <input type="search" placeholder="Search a city..." autoFocus="on" class="form-control" />
+                                    </div>  
+                                    <div className="col-3">  
+                                        <input type="submit" value="Search" className="btn btn-primary" w-100 />
+                                    </div>    
+                                </div>        
                             </form>
                         </div>
                         <div className="col-3">
                             <ul>
                                 <li>
-                                    <strong> Oct 1 </strong>
+                                    <strong><span className="date"> Oct 1 </span></strong>
                                 </li>
                                 <li>
-                                    Saturday
+                                    <span className="day">Saturday</span>
                                 </li>
                                 <li>
-                                    15:31
+                                    <span className="time">15:31</span>
                                 </li>
                             </ul>
                         </div>
@@ -31,16 +38,16 @@ export default function Weather() {
                         <div className="col-6">
                             <ul>
                                 <li>
-                                    <em>cloudy</em>
+                                    <em><span className="condition">cloudy</span></em>
                                 </li>
                                 <li>
-                                    <strong>81</strong>°F/°C
+                                    <span className="nowTemperature"><strong>81</strong><span className="units">°F/°C</span></span>
                                 </li>
                                 <li>
-                                    feels like: 87°F/°C
+                                    <span className="feelsTemperature">feels like: 87<span className="unitsSmall">°F/°C</span></span>
                                 </li>
                                 <li>
-                                    min: 78°F/°C, max: 88°F/°C
+                                    <span className="temperatureMinMax">min: 78<span className="unitsSmall">°F/°C</span>, max: 88 <span className="unitsSmall">°F/°C</span></span>
                                 </li>
                             </ul>
                         </div>
