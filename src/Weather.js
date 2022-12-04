@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./Weather.css"
 
 export default function Weather() {
+    const[weather, setWeather] = useState({ready: false})
+    function handleResponse(response){
+        setWeather({
+            ready: true,
+            city: response.data.name,
+            temperature: response.data.main.temperature,
+            description: response.data.weather[0].description,
+            temperatureFeels: response.data.main.feels_like,
+            temperatureMin: response.data.main.temp_min,
+            temperatureMax: response.data.main.temp_max,
+            humidity: response.data.main.humidity,
+            wind: response.data.wind.speed,
+
+        });
+        setReady(true);
+    }
+    if (weather.ready){
     return (
     <div className="Weather">
     <div className="row">
@@ -33,21 +51,21 @@ export default function Weather() {
                     </div>
                     <div className="row">
                         <h1>
-                            <strong>MIAMI</strong>
+                            <strong>{weather.city}</strong>
                         </h1>
                         <div className="col-6">
                             <ul>
                                 <li>
-                                    <em><span className="condition">cloudy</span></em>
+                                    <em><span className="condition">{weather.description}</span></em>
                                 </li>
                                 <li>
-                                    <span className="nowTemperature"><strong>81</strong><span className="units">°F/°C</span></span>
+                                    <span className="nowTemperature"><strong>{weather.temperature}</strong><span className="units">°F/°C</span></span>
                                 </li>
                                 <li>
-                                    <span className="feelsTemperature">feels like: 87<span className="unitsSmall">°F/°C</span></span>
+                                    <span className="feelsTemperature">feels like: {weather.temperatureFeels}<span className="unitsSmall">°F/°C</span></span>
                                 </li>
                                 <li>
-                                    <span className="temperatureMinMax">min: 78<span className="unitsSmall">°F/°C</span>, max: 88 <span className="unitsSmall">°F/°C</span></span>
+                                    <span className="temperatureMinMax">min: {weather.temperatureMin}<span className="unitsSmall">°F/°C</span>, max: {weather.temperatureMax} <span className="unitsSmall">°F/°C</span></span>
                                 </li>
                             </ul>
                         </div>
@@ -55,13 +73,20 @@ export default function Weather() {
                             <div className="icon"> <img src="https://media.istockphoto.com/vectors/funny-eyed-sun-sunshine-cute-summer-logo-spring-light-emotion-doodle-vector-id1359218243?b=1&k=20&m=1359218243&s=170667a&w=0&h=kh-tOUEgN6MItdSiNxn2RB2J8v-zdM8M7Vs-vINATRw=" width="100" alt="sunny" /></div>
                             <ul>
                                 <li>
-                                    Humidity: 78%
+                                    Humidity: {weather.humidity}%
                                 </li>
                                 <li>
-                                    Wind: 7mph
+                                    Wind: {weather.wind}mph
                                 </li>
                             </ul>
                             </div>
                         </div>
                         </div>);
-}
+} else {
+    const apiKey="930a3a9d32117e6afd045c48755b3db9";
+let city="Miami"
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+axios.get(apiUrl).then(handleResponse)
+
+return"Loading..."
+}}
